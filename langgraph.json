@@ -1,0 +1,7 @@
+{
+    "dependencies": ["."],
+    "graphs": {
+      "agent": "./agent.py:broda_man_v2"
+    },
+    "env": ".env"
+  }
