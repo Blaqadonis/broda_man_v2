@@ -1125,15 +1125,15 @@ workflow.add_conditional_edges(
 
 # Compile the workflow
 checkpointer = MemorySaver()
-app = workflow.compile(checkpointer)
+broda_man_v2 = workflow.compile(checkpointer)
 
 # Specify a thread (if needed)
-config = {"configurable": {"thread_id": "1"}}
+#config = {"configurable": {"thread_id": "1"}}
 
 # Start the conversation with user input
-messages = [HumanMessage(content=input("You: "))]
-result = app.invoke({"messages": messages}, config)
+#messages = [HumanMessage(content=input("You: "))]
+#result = broda_man_v2.invoke({"messages": messages}, config)
 
 # Display the conversation result
-for message in result["messages"]:
-    print(f"Broda Man: {message.content}")
+#for message in result["messages"]:
+    #print(f"Broda Man: {message.content}")
